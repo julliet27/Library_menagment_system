@@ -2,36 +2,36 @@
   session_start();
 ?>
 <html>
-  <head>
-    <link rel = "stylesheet" href = "css/main.css">
-    <style>
-      form {
-        display: inline-block;
-        font-size: 40px;
-        color: white;
-        border-radius: 25px;
-        background-color: #333;
-        padding: 30px;
-        opacity: 0.9;
-        margin-top: 2%;
-      }
+<head>
+  <link rel = "stylesheet" href = "../css/main.css">
+  <style>
+    form {
+      display: inline-block;
+      font-size: 40px;
+      color: white;
+      border-radius: 25px;
+      background-color: #333;
+      padding: 30px;
+      opacity: 0.9;
+      margin-top: 2%;
+    }
 
-      #register {
-        float: right;
-        margin-right: 10%;
-      }
+    #register {
+      float: right;
+      margin-right: 10%;
+    }
 
-      #login {
-        margin-left: 10%;
-        margin-top: 8%;
-      }
-    </style>
-  </head>
+    #login {
+      margin-left: 10%;
+      margin-top: 8%;
+    }
+  </style>
+</head>
 
 <body>
-  <form id = "login" action = "validate.php" method = "post">
+  <form action = "validate.php" method = "post" id = "login">
     <h2>Login</h2>
-    <label>ID</label>
+    <label>Admin ID</label>
     <input type = "text" name = "id" required>
     <br><br>
     <label>Password</label>
@@ -40,12 +40,9 @@
     <button type = "submit" class = "button">Login</button>
   </form>
 
-  <form id = "register" action = "register.php" method = "post">
+  <form action = "register.php" method = "post" id = "register">
     <h2>Sign up</h2>
-    <label>Department</label>
-    <input type = "text" name = "department" required>
-    <br><br>
-    <label>Student ID</label>
+    <label>Admin ID</label>
     <input type = "text" name = "ID" required>
     <br><br>
     <label>Name</label>

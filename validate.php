@@ -6,7 +6,7 @@ $db = "library";
 $con = new mysqli("localhost", $user, $pass, $db) or die("Unable to connect");
 $id = $_POST["id"];
 $pass = $_POST["password"];
-$query = "select ID, password, name from student where ID = '$id'";
+$query = "select ID, password, name from admin where ID = '$id'";
 
 $result = mysqli_query($con, $query);
 $rows = mysqli_fetch_all($result, MYSQLI_ASSOC);
@@ -15,20 +15,20 @@ $rows = mysqli_fetch_all($result, MYSQLI_ASSOC);
 if (mysqli_num_rows($result) == 0)
 {
 
-  header("location: http://localhost/Library Management System/signin&signup.php");
+  header("location: http://localhost/Library Management System/admin/signin&signup.php");
 } elseif ($rows["0"]["password"] != $pass)
 {
 
-  header("location: http://localhost/Library Management System/signin&signup.php");
+  header("location: http://localhost/Library Management System/admin/signin&signup.php");
 } else
 {
   $_SESSION['id'] = $id;
   $_SESSION['name'] = $rows["0"]["name"];
-  $_SESSION['user_type'] = "user";
+  $_SESSION['user_type'] = "admin";
   //print_r(array_keys($rows));
   //print_r($rows["0"]);
   // printf($rows["0"]["Name"]);
-  header("location: http://localhost/Library Management System/home.php");
+  header("location: http://localhost/Library Management System/admin/home.php");
 }
 // if ($num == 1)
 // {
