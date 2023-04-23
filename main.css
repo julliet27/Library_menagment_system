@@ -1,0 +1,129 @@
+body, html {
+  padding: 0px;
+  margin: 0px;
+  background-image: url("http://localhost/Library Management System/static/images/banner.jpg");
+  background-position: center;
+  background-size: cover;
+  font-family: Arial;
+}
+
+nav {
+
+}
+
+h1 {
+  color: white;
+  opacity: 0.9;
+  -webkit-text-stroke: 0.8px black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  opacity: 0.5;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+li a:hover {
+  transition-duration: 0.5s;
+  background-color: white;
+  color: #333;
+}
+
+.header {
+  font-family: "Garamond";
+  padding: 60px;
+  padding-top: 30px;
+  color: #F1B439;
+  font-size: 30px;
+  font-weight: 1.5em;
+  -webkit-text-stroke: 0.8px black;
+}
+
+table, th, td {
+  border: 1px solid white;
+  text-align: center;
+  padding: 30px;
+  font-size: 30px;
+  -webkit-text-stroke: 0.8px black;
+  opacity: 0.9;
+}
+
+#table_data {
+  color: white;
+  background-color: #333;
+  transition-duration: 0.5s;
+}
+
+#table_data:hover {
+  background-color: white;
+  color: #333;
+  transition-duration: 0.5s;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10%;
+}
+
+#table_head {
+  color: white;
+  background-color: rgb(7, 27, 68);
+}
+
+#tag {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+#subtag {
+  font-size: 40px;
+  font-weight: bold;
+  padding-left: 100px;
+}
+
+.option {
+  width: 100%;
+  padding: 30px;
+  background-color: rgb(7, 27, 68);
+}
+
+section {
+  color: white;
+  background-color: #333;
+  transition-duration: 0.5s;
+  opacity: 0.9;
+  font-size: 30px;
+  -webkit-text-stroke: 0.8px black;
+  border: 1px solid white;
+}
+
+.button {
+  font-family: Arial;
+  font-size: 25px;
+  padding: 30px;
+  border-radius: 25px;
+  transition-duration: 0.5s;
+}
+
+.button:hover {
+  background-color: rgb(7, 27, 68);
+  color: white;
+  transition-duration: 0.5s;
+}
